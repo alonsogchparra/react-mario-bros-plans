@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Mario Bros Plans
 
-## Available Scripts
+This React project is a light twitter (well that's how I see it) as user you will add projects and add some details about it, besides this project will handle authentication with Firebase (I think is awesome!).
 
-In the project directory, you can run:
+# Important
 
-### `yarn start`
+The original project is by **The Net Ninja** you can check his Youtube's channel [here](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and you can find so much more that you feel interested.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Why this part is considerate important? Because if you want to follow the original tutorial, you can check **The Net Ninja** github's project [here](https://github.com/iamshaunjp/React-Redux-Firebase-App). There is something that some people on his youtube's channel comments about this project, that they (as me at beginning) were following the tutorial step by step, video by video and don't considerate that the Firebase version would be an important step to move forward with the tutorial.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+At first I was thinking that probably I was doing something wrong or probably I missed something in the process, but then, after suffered for a little while lol. I found out (searching on Internet) that the last version on Firebase (V3) has changed some things in compare with Firebase V2. In my mind I was saying: Ok, that means you have two options:
 
-### `yarn test`
+- One. If you want to continue with the tutorial you have to install the dependencies with the same version like **The Net Ninja** tutorial and his gihub's repository has it. This option is good, and will be a reminder if you follow the next tutorial from him or other tutorial, that be aware with the dependencies and versions of x projects.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Two. Keep the project and move forward with all current dependencies, but you have to figure it out how to make work the project.
 
-### `yarn build`
+So I thought: Ok **The Net Ninja** already has the project with Firebase version 2 (V2). I could do the same project but with the Firebase next's version (V3). That way me and others developers can get more info about how to handle this project with the most recent changes. So I took it as a personal challenge (it was hard, but I think this second option was the best decision for me).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once you have this very very clear, then we can move on.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+What I like about this project is it's handle different elements that would be helpful for other project that you could have in mind or this will good as guide for next projects. Elements like: Redux, React Router DOM, React Redux Firebase, Redux Firestore, Redux Thunk (I know probably is a lot, but it will worth it to practice and learn new stuff)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I will work with **Yarn** to install dependencies and run the project. Feel free if you prefer work with **NPM** it is good too.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If the is another tips that I think is important to everyone or as reminder to myself I will add it here (That's with you Alonso, don't be lazy when you considerate something important add it on Readme, ok? Ok, don't yelling me lol).
