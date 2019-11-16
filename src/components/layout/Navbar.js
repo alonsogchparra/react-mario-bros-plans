@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import SignedLinks from './SignedLinks';
+import { Link } from 'react-router-dom';
+import SignedInLinks from './SignedInLinks';
 import SignOutLinks from './SignedOutLinks';
 
 const navbar = (props) => {
@@ -10,7 +10,7 @@ const navbar = (props) => {
         <div className="container">
           <Link to='/' className="brand-logo">Mario Bro's Plans</Link>
           <ul className="right">
-            <SignedLinks />
+            <SignedInLinks />
             <SignOutLinks />
           </ul>
         </div>
