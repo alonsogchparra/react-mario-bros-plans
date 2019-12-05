@@ -1,0 +1,1 @@
+export { signUp, signOut } from './auth';
