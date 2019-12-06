@@ -1,3 +1,4 @@
+import * as actionTypes from '../actions/actionTypes';
 
 const initState = {
   projects: [
@@ -9,6 +10,15 @@ const initState = {
 
 const reducer = (state = initState, action) => {
   switch (action.type) {
+
+    case actionTypes.CREATE_PROJECT:
+      console.log('created project', action.project);
+      return state;
+
+    case actionTypes.CREATE_PROJECT_ERROR:
+      console.log('create project error', action.err);
+      return state;
+
     default:
       return state;
   }
