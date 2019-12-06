@@ -7,6 +7,20 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch(action.type) {
 
+    case actionTypes.LOGIN_SUCCESS:
+      console.log('Login Success');
+      return {
+        ...state,
+        authError: null
+      }
+
+    case actionTypes.LOGIN_ERROR:
+      console.log('Login Error');
+      return {
+        ...state,
+        authError: action.err.message
+      }
+
     case actionTypes.SIGNOUT_SUCCESS: {
       console.log('Signout Success');
       return state;
