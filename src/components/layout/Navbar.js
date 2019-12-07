@@ -4,17 +4,18 @@ import { connect } from 'react-redux'
 import { isLoaded } from 'react-redux-firebase';
 import SignedInLinks from './SignedInLinks';
 import SignOutLinks from './SignedOutLinks';
+import * as actions from '../../store/actions';
 
 class Navbar extends Component {
 
   render() {
-    const { auth, profile } = this.props;
+    const { auth, profile, onSignOut } = this.props;
     const links = auth.uid ? <SignedInLinks profile={profile} /> : <SignOutLinks />;
     const checkIsLoaded = isLoaded(auth) ? links : '';
     const sideNavLinks = auth.uid ? (
       <div>
         <li className="sidenav-close"><NavLink to="/create">New Project</NavLink></li>
-        <li className="sidenav-close"><a>Log Out</a></li>
+        <li className="sidenav-close"><a className="logout" onClick={onSignOut}>Log Out</a></li>
       </div>
     ) : (
       <div>
@@ -53,4 +54,10 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(Navbar);
+const mapDispatchToProps = dispatch => {
+  return {
+    onSignOut: () => dispatch(actions.signOut())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
