@@ -27,10 +27,20 @@ form button, form h5 {
   margin: 20px 0;
 }
 
+.logout {
+  cursor: pointer;
+}
+
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=email]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-color: #ec407a;
   box-shadow: none;
+}
+
+@media (max-width: 40rem) {
+  nav .brand-logo {
+    font-size: 1.2rem;
+  }
 }
